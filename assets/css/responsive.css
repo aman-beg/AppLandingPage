@@ -1,0 +1,165 @@
+/* ----------------responsiveness------------- */
+@media screen and (min-width:576px) {
+    .hero{
+        max-width: 80%;
+    }
+    .faq, .contact{
+        max-width: 80%;
+    }
+    footer .page-links>.link-column:nth-child(1){
+        max-width: 70%;
+    }
+}
+@media screen and (min-width:768px) {
+    h1{
+        font-size: 2.3rem;
+    }
+    h2{
+        font-size:2.2rem;
+    }
+    .container>.flex{
+        flex-flow:row wrap;
+        justify-content: center;
+    }
+    .nav>a{
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+    .app-sc img{
+        padding-inline:20px;
+    }
+    .sc-3{
+        display: inline-block;
+    }
+    .hero{
+        max-width: 70%;
+    }
+    #facts .facts-cards{
+        flex-flow:row wrap;
+        justify-content: center;
+    }
+    #facts .facts-card{
+        max-width:45%;
+    }
+    .contact-details .location{
+        max-width:fit-content;
+        margin:auto;
+    }
+    form .name-email{
+        flex-direction: row;
+    }
+    form .name-email input{
+        width: 48%;
+    }
+    footer .page-links{
+        align-items: flex-start;
+    }
+    footer .page-links .link-column{
+        width: 40%;
+    }
+    footer .page-links .link-column:nth-child(1){
+        align-self: center;
+    }
+}
+@media screen and (min-width:992px) {
+    h1{
+        font-size: 2.3rem;
+    }
+    h2{
+        font-size:2.4rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+    h4{
+        font-size:1.5rem;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+    .member-cards,.pricing-cards,.reviews-cards,.steps-cards,.download-cards{
+        gap:40px;
+    }
+    .card{
+        width: clamp(200px,80%,280px);
+    }
+    .nav>a{
+        font-size: 2.5rem;
+        padding-left: 40px;
+    }
+    .nav i{
+        display: none;
+    }
+    .nav-links{
+        width: auto;
+        height: auto;
+        padding-block:15px;
+        position: unset;
+        flex-direction: row;
+        color:white;
+        background-color: var(--primary-color);
+        padding-right: 40px;
+    }
+    .nav-links>a{
+        width:fit-content;
+    }
+    .nav-links>a{
+        position: relative;
+    }
+    .nav-links>a::after{
+        content: ' ';
+        width:0;
+        height: 2px;
+        background-color: #f3f3f3;
+        position: absolute;
+        bottom:0px;
+        left:0;
+        transition: width .2s ease .1s;
+    }
+    .nav-links>a:hover::after{
+        width:100%;
+    }
+    .hero{
+        text-align: left;
+        gap:60px;
+        flex-direction: row;
+    }
+    .hero-text{
+        max-width: 60%;
+    }
+    .hero-img{
+        align-self: flex-end;
+    }
+    .hero-buttons{
+        justify-content: flex-start;
+    }
+    .facts{
+        flex-direction: row;
+    }
+    .facts>div:nth-child(1){
+        width:40%;
+    }
+    .facts>div:nth-child(2){
+        width: 60%;
+    }
+    .app-sc img{
+        padding-inline:40px;
+    }
+    .pricing-cards>.card{
+        min-width: 300px;
+        padding-inline:10px;
+    }
+    .faq{
+        max-width: 60%;
+    }
+    .contact-det-form>div{
+        width:50%;
+        align-self: flex-start;
+    }
+    .contact-details .location{
+        max-width: 100%;
+    }
+    footer .page-links .link-column{
+        width: 20%;
+    }
+}
